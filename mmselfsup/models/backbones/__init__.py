@@ -9,9 +9,10 @@ from .mocov3_vit import MoCoV3ViT
 from .resnet import ResNet, ResNetSobel, ResNetV1d
 from .resnext import ResNeXt
 from .simmim_swin import SimMIMSwinTransformer
+from .style_transfer_vsa_v4 import VSGenerator
 
 __all__ = [
     'ResNet', 'ResNetSobel', 'ResNetV1d', 'ResNeXt', 'MAEViT', 'MoCoV3ViT',
     'SimMIMSwinTransformer', 'CAEViT', 'MaskFeatViT', 'BEiTViT', 'MILANViT',
-    'MixMIMTransformerPretrain'
+    'MixMIMTransformerPretrain', 'VSGenerator'
 ]

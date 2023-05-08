@@ -65,6 +65,17 @@ English | [简体中文](README_zh-CN.md)
     <img src="https://user-images.githubusercontent.com/25839884/219026120-ba71e48b-6e94-4bd4-b4e9-b7d175b5e362.png" width="3%" alt="" /></a>
 </div>
 
+## My Updates
+1. Create folder with structure:
+```
+data
+└── imagenet
+    ├── filenames.txt  # Created by `ls train > filenames.txt`
+    └── train
+```
+2. Run self sup for my generator `python tools/train.py configs/selfsup/mocov3/mocov3_vs_generator_8xb512-amp-coslr-100e_in1k.py --work-dir work_dirs/selfsup/005_adam_pretrain_vs_generator_gan_init`
+3. After training convert to my repo `tools/prepare_ckpt_to_dct_net.py`
+
 ## Introduction
 
 MMSelfSup is an open source self-supervised representation learning toolbox based on PyTorch. It is a part of the [OpenMMLab](https://openmmlab.com/) project.
